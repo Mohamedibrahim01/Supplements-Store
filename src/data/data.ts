@@ -35,13 +35,6 @@ export const ProductsData = [
         image: "/images/omega-3.jpg",
     },
     {
-        id: 6,
-        name: "Omega-3 Fish Oil",
-        description: "Supports heart health and reduces inflammation.",
-        price: 14.99,
-        image: "/images/omega-3.jpg",
-    },
-    {
         id: 7,
         name: "Omega-3 Fish Oil",
         description: "Supports heart health and reduces inflammation.",

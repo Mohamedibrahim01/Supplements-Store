@@ -5,7 +5,7 @@ import { FaHome, FaBox, FaInfoCircle, FaDumbbell } from "react-icons/fa";
 function Navbar() {
   return (
     <motion.nav
-      className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 shadow-lg fixed top-0 left-0 w-full z-50"
+      className="bg-gradient-to-r from-green-700 via-green-600 to-emerald-500 shadow-lg fixed top-0 left-0 w-full z-50"
       initial={{ y: -80, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
@@ -24,6 +24,7 @@ function Navbar() {
             </h1>
           </motion.div>
         </Link>
+
         {/* Links */}
         <div className="flex gap-6">
           {[
