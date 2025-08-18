@@ -29,7 +29,7 @@ function Navbar() {
         <div className="flex gap-6">
           {[
             { to: "/", icon: <FaHome />, label: "Home" },
-            { to: "/products", icon: <FaBox />, label: "Products" },
+            { to: "/Categories", icon: <FaBox />, label: "Categories" },
             { to: "/about", icon: <FaInfoCircle />, label: "About" },
           ].map((link, i) => (
             <motion.div
