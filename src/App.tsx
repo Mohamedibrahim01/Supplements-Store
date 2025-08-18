@@ -11,10 +11,9 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Products" element={<Products />} />
-        <Route path="/Offers" element={<Offers />} />
-        <Route path="/product:id" element={<ProductsDetails />} />
-        <Route path="*" element={<div className="p-16">404 - Not Found</div>} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/offers" element={<Offers />} />
+        <Route path="/products/:id" element={<ProductsDetails />} />
       </Routes>
     </>
   );
