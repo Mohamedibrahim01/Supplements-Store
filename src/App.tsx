@@ -14,7 +14,11 @@ function App() {
         <Route path="/Categories" element={<Categories />} />
         <Route path="/offers" element={<Offers />} />
         <Route path="/products/:id" element={<ProductsDetails />} />
+        {/* Footer */}
       </Routes>
+      <footer className="bg-black py-6 text-center text-gray-500 text-sm border-t border-green-800">
+        © {new Date().getFullYear()} SuppStore. All rights reserved.
+      </footer>
     </>
   );
 }

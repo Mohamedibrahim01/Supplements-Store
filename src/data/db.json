@@ -1,0 +1,94 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Whey Protein Isolate",
+      "brand": "Optimum Nutrition",
+      "type": "whey",
+      "price": 1200,
+      "image": "/src/assets/creatine-1.jpg",
+      "description": "High-quality whey protein isolate for muscle recovery."
+    },
+    {
+      "id": 2,
+      "name": "Casein Protein",
+      "brand": "Dymatize",
+      "type": "casein",
+      "price": 950,
+      "image": "https://example.com/casein.jpg",
+      "description": "Slow-digesting casein protein, great before sleep."
+     },
+    {
+      "id": 3,
+      "name": "Casein Protein",
+      "brand": "Dymatize",
+      "type": "casein",
+      "price": 950,
+      "image": "https://example.com/casein.jpg",
+      "description": "Slow-digesting casein protein, great before sleep."
+     },
+    {
+      "id": 4,
+      "name": "Casein Protein",
+      "brand": "Dymatize",
+      "type": "casein",
+      "price": 950,
+      "image": "https://example.com/casein.jpg",
+      "description": "Slow-digesting casein protein, great before sleep."
+     },
+    {
+      "id": 5,
+      "name": "Casein Protein",
+      "brand": "Dymatize",
+      "type": "casein",
+      "price": 950,
+      "image": "https://example.com/casein.jpg",
+      "description": "Slow-digesting casein protein, great before sleep."
+     },
+    {
+      "id": 6,
+      "name": "Casein Protein",
+      "brand": "Dymatize",
+      "type": "casein",
+      "price": 950,
+      "image": "https://example.com/casein.jpg",
+      "description": "Slow-digesting casein protein, great before sleep."
+     },
+    {
+      "id": 7,
+      "name": "Casein Protein",
+      "brand": "Dymatize",
+      "type": "casein",
+      "price": 950,
+      "image": "https://example.com/casein.jpg",
+      "description": "Slow-digesting casein protein, great before sleep."
+     },
+    {
+      "id": 8,
+      "name": "Casein Protein",
+      "brand": "Dymatize",
+      "type": "casein",
+      "price": 950,
+      "image": "https://example.com/casein.jpg",
+      "description": "Slow-digesting casein protein, great before sleep."
+     },
+    {
+      "id": 9,
+      "name": "Casein Protein",
+      "brand": "Dymatize",
+      "type": "casein",
+      "price": 950,
+      "image": "https://example.com/casein.jpg",
+      "description": "Slow-digesting casein protein, great before sleep."
+     },
+    {
+      "id": 10,
+      "name": "Casein Protein",
+      "brand": "Dymatize",
+      "type": "casein",
+      "price": 950,
+      "image": "https://example.com/casein.jpg",
+      "description": "Slow-digesting casein protein, great before sleep."
+    }
+  ]
+}
