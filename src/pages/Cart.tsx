@@ -50,8 +50,14 @@ export default function Cart() {
                       {product.description}
                     </p>
                     <div className="mt-2 flex items-center gap-3">
-                      <label className="text-sm text-slate-200">Qty</label>
+                      <label
+                        htmlFor={`qty-${product.id}`}
+                        className="text-sm text-slate-200"
+                      >
+                        Qty
+                      </label>
                       <input
+                        id={`qty-${product.id}`}
                         type="number"
                         value={quantity}
                         min={1}
