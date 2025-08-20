@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { FaHome, FaBox, FaInfoCircle, FaDumbbell } from "react-icons/fa";
+import { FaHome, FaBox, FaTags, FaDumbbell } from "react-icons/fa";
 
 function Navbar() {
   return (
@@ -30,7 +30,8 @@ function Navbar() {
           {[
             { to: "/", icon: <FaHome />, label: "Home" },
             { to: "/Categories", icon: <FaBox />, label: "Categories" },
-            { to: "/about", icon: <FaInfoCircle />, label: "About" },
+            { to: "/products", icon: <FaBox />, label: "Products" },
+            { to: "/offers", icon: <FaTags />, label: "Offers" },
           ].map((link, i) => (
             <motion.div
               key={i}

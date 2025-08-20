@@ -3,7 +3,8 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Categories from "./pages/Categories";
 import Offers from "./pages/Offers";
-import ProductsDetails from "./pages/productsDetails";
+import Products from "./pages/Products";
+import ProductsDetails from "./pages/ProductsDetails";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/Categories" element={<Categories />} />
         <Route path="/offers" element={<Offers />} />
+        <Route path="/products" element={<Products />} />
         <Route path="/products/:id" element={<ProductsDetails />} />
         {/* Footer */}
       </Routes>

@@ -32,13 +32,13 @@ const offers = [
     id: "offer1",
     name: "🔥 Buy 1 Get 1 Free",
     desc: "On selected protein supplements",
-    image: "/src/assets/offer1.jpg",
+    image: "/src/assets/protein-2.jpeg",
   },
   {
     id: "offer2",
     name: "💸 30% OFF",
     desc: "On all pre-workouts this week",
-    image: "/src/assets/offer2.jpg",
+    image: "/src/assets/creatine-4.jpg",
   },
 ];
 export default function Categories() {

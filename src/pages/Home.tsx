@@ -86,10 +86,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-black py-6 text-center text-gray-500 text-sm border-t border-green-800">
-        © {new Date().getFullYear()} SuppStore. All rights reserved.
-      </footer>
+      {/* Footer is globally rendered in App */}
     </div>
   );
 }
