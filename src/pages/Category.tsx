@@ -1,6 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { ProductsData } from "../data/data";
-import { useCart } from "../context/CartContext";
+import { useCart } from "../context/useCart";
 
 export default function Category() {
   const { name } = useParams<{ name: string }>();

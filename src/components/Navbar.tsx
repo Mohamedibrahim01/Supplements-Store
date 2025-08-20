@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { FaHome, FaBox, FaTags, FaDumbbell } from "react-icons/fa";
 import { Link as RouterLink } from "react-router-dom";
-import { useCart } from "../context/CartContext";
+import { useCart } from "../context/useCart";
 
 function Navbar() {
   return (
@@ -66,9 +66,7 @@ function CartButton() {
     >
       Cart
       {totalItems > 0 && (
-        <span className="ml-2 text-xs badge">
-          {totalItems}
-        </span>
+        <span className="ml-2 text-xs badge">{totalItems}</span>
       )}
     </RouterLink>
   );

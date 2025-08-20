@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useMemo, useState } from "react";
+import { createContext, useEffect, useMemo, useState } from "react";
 import type { ReactNode } from "react";
 import type { Product } from "../data/data";
 
@@ -57,7 +57,9 @@ export function CartProvider({ children }: { children: ReactNode }) {
     setItems((prev) =>
       prev
         .map((ci) =>
-          ci.product.id === productId ? { ...ci, quantity: Math.max(1, Math.min(99, quantity)) } : ci
+          ci.product.id === productId
+            ? { ...ci, quantity: Math.max(1, Math.min(99, quantity)) }
+            : ci
         )
         .filter((ci) => ci.quantity > 0)
     );
@@ -67,7 +69,10 @@ export function CartProvider({ children }: { children: ReactNode }) {
 
   const { totalItems, totalPrice } = useMemo(() => {
     const totalItemsCalc = items.reduce((sum, ci) => sum + ci.quantity, 0);
-    const totalPriceCalc = items.reduce((sum, ci) => sum + ci.quantity * ci.product.price, 0);
+    const totalPriceCalc = items.reduce(
+      (sum, ci) => sum + ci.quantity * ci.product.price,
+      0
+    );
     return { totalItems: totalItemsCalc, totalPrice: totalPriceCalc };
   }, [items]);
 
@@ -84,10 +89,5 @@ export function CartProvider({ children }: { children: ReactNode }) {
   return <CartContext.Provider value={value}>{children}</CartContext.Provider>;
 }
 
-export function useCart() {
-  const ctx = useContext(CartContext);
-  if (!ctx) throw new Error("useCart must be used within CartProvider");
-  return ctx;
-}
-
-
+// Export the context for use in the hook file
+export { CartContext };
