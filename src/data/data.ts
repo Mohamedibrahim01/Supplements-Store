@@ -130,5 +130,50 @@ export const ProductsData: Product[] = [
 		price: 13.99,
 		category: "Vitamins",
 	},
+	{
+		id: 16,
+		name: "Nitro Surge Pre-Workout",
+		description:
+			"High-energy pre-workout with caffeine, beta-alanine, and citrulline for pump and focus.",
+		image: "/src/assets/Elevating-your-supplement-photography-with-CGI.webp",
+		price: 29.99,
+		category: "Pre-Workout",
+	},
+	{
+		id: 17,
+		name: "Pump Boost Pre-Workout",
+		description:
+			"Stim-free formula focused on pump and endurance with L-citrulline and betaine.",
+		image: "/src/assets/Elevating-your-supplement-photography-with-CGI.webp",
+		price: 27.5,
+		category: "Pre-Workout",
+	},
+	{
+		id: 18,
+		name: "Energy Rush Pre-Workout",
+		description:
+			"Clean energy blend with tea extract and electrolytes for powerful workouts.",
+		image: "/src/assets/Elevating-your-supplement-photography-with-CGI.webp",
+		price: 24.99,
+		category: "Pre-Workout",
+	},
+	{
+		id: 19,
+		name: "Focus Ignite Pre-Workout",
+		description:
+			"Nootropic-forward pre-workout to enhance mental clarity and mind-muscle connection.",
+		image: "/src/assets/Elevating-your-supplement-photography-with-CGI.webp",
+		price: 32.0,
+		category: "Pre-Workout",
+	},
+	{
+		id: 20,
+		name: "Ultra Performance Pre-Workout",
+		description:
+			"Comprehensive performance matrix for strength, endurance, and hydration support.",
+		image: "/src/assets/Elevating-your-supplement-photography-with-CGI.webp",
+		price: 39.99,
+		category: "Pre-Workout",
+	},
 ];
 

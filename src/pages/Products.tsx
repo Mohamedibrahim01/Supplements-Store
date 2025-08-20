@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom";
 import { ProductsData } from "../data/data";
+import { useCart } from "../context/CartContext";
 
 export default function Products() {
+  const { addItem } = useCart();
   return (
-    <div className="min-h-screen p-10 pt-24 bg-gradient-to-br from-[#98ff98] via-white to-[#ccffcc] dark:from-green-950 dark:via-green-900 dark:to-black">
+    <div className="min-h-screen p-10 pt-24">
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-4xl font-extrabold text-green-700 dark:text-green-200 mb-10 text-center">
+        <h1 className="text-4xl font-extrabold text-emerald-300 mb-10 text-center">
           All Products
         </h1>
 
@@ -13,24 +15,32 @@ export default function Products() {
           {ProductsData.map((p) => (
             <div
               key={p.id}
-              className="bg-white dark:bg-green-950 rounded-2xl shadow-md overflow-hidden border border-green-200 dark:border-green-700 flex flex-col"
+              className="glass rounded-2xl overflow-hidden flex flex-col"
             >
               <img src={p.image} alt={p.name} className="w-full h-56 object-cover" />
               <div className="p-5 flex flex-col gap-2 flex-1">
-                <h3 className="text-lg font-semibold text-green-900 dark:text-green-100">
+                <h3 className="text-lg font-semibold text-emerald-200">
                   {p.name}
                 </h3>
-                <p className="text-green-700 dark:text-green-300 text-sm line-clamp-2">
+                <p className="text-slate-300 text-sm line-clamp-2">
                   {p.description}
                 </p>
-                <div className="mt-auto flex items-center justify-between">
-                  <span className="text-2xl font-bold text-green-600">${p.price.toFixed(2)}</span>
-                  <Link
-                    to={`/products/${p.id}`}
-                    className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg"
-                  >
-                    Details
-                  </Link>
+                <div className="mt-auto flex items-center justify-between gap-2">
+                  <span className="text-2xl font-bold text-emerald-300">${p.price.toFixed(2)}</span>
+                  <div className="flex gap-2">
+                    <button
+                      onClick={() => addItem(p, 1)}
+                      className="btn-primary"
+                    >
+                      Add to Cart
+                    </button>
+                    <Link
+                      to={`/products/${p.id}`}
+                      className="glass px-4 py-2 rounded-lg"
+                    >
+                      Details
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
