@@ -4,10 +4,10 @@ import Home from "./pages/Home";
 import Categories from "./pages/Categories";
 import Offers from "./pages/Offers";
 import Products from "./pages/Products";
-import ProductsDetails from "./pages/ProductsDetails";
 import Cart from "./pages/Cart";
 import Category from "./pages/Category";
 import { CartProvider } from "./context/CartContext";
+import ProductDetails from "./pages/ProductsDetails";
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
           <Route path="/category/:name" element={<Category />} />
           <Route path="/offers" element={<Offers />} />
           <Route path="/products" element={<Products />} />
-          <Route path="/products/:id" element={<ProductsDetails />} />
+          <Route path="/products/:id" element={<ProductDetails />} />
           <Route path="/cart" element={<Cart />} />
           {/* Footer */}
         </Routes>
