@@ -7,7 +7,7 @@ import Products from "./pages/Products";
 import Cart from "./pages/Cart";
 import Category from "./pages/Category";
 import { CartProvider } from "./context/CartContext";
-import ProductsDetails from "./pages/ProductsDetails";
+import ProductsDetails from "./pages/products-details";
 
 function App() {
   return (
