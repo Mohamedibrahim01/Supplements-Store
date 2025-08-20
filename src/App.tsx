@@ -7,7 +7,7 @@ import Products from "./pages/Products";
 import Cart from "./pages/Cart";
 import Category from "./pages/Category";
 import { CartProvider } from "./context/CartContext";
-import ProductDetails from "./pages/ProductsDetails";
+import ProductsDetails from "./pages/ProductsDetails";
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
           <Route path="/category/:name" element={<Category />} />
           <Route path="/offers" element={<Offers />} />
           <Route path="/products" element={<Products />} />
-          <Route path="/products/:id" element={<ProductDetails />} />
+          <Route path="/products/:id" element={<ProductsDetails />} />
           <Route path="/cart" element={<Cart />} />
           {/* Footer */}
         </Routes>
